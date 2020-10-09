@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Edlee Ducay</title>
+        <link rel="icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="css/main.css" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <div class="wrapper">
+    <body>
+        <div className="container-fluid">
+          <div class="navbar">        
+              <div class="logo_link">
+                <a href="#intro">
+                  <img class="logo" src="https://i.ibb.co/HV8NwGr/ed-logotr.png" alt='LOGO'/>
+                </a>
+            </div>
+            <nav>
+                <ul class='navlinks'>
+                    <li>
+                        <a href="#about">About</a>                 
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+          </div>
+        <div class="intro_content">
+        <div class="intro" id="intro">
+          <div class="intro_gradient">
+            <h1 class="animated fade-in intro_title">Hey, I'm Edlee.</h1>
+            <div class="scrolldown"> <a class="fa fa-angle-down page-scroll" href="#about"></a> </div> 
+          </div>
+        </div>
+        </div>
+        <div class="body_content">
+          <section id="about">
+            <h2>
+              About
+            </h2>
+            <p className='intro'>
+  
+              I'm Edlee Ducay, a future prospect of the computer
+              science development scene.
+              I am currently a third-year university student
+              at the University of Alberta with a major in computing 
+              science and minor in mathematics. Presently, I aspire to expand my knowledge
+              in the fields of web-development, software development and AI.
+              <br><br>
+              My hobbies include football, working out, and cooking (mostly eating) food.
+            </p>
+          </section>
+          <section id="projects">
+            <h2>
+              Projects
+            </h2>
+            <div class="projects-container">
+
+
+            <div class="modal-open babynamesBtn" data-modal="babynamesModal" data-text="Baby Names"></div>
+            <div class="modal-open salesystemBtn" data-modal="salesystemModal" data-text="Sales System"></div>
+            <div class="modal-open datasearchBtn" data-modal="datasearchModal" data-text="Data Search"></div>
+
+            </div>
+
+
+
+            <!-- Project Modals -->
+            <div class="modal fade" id="babynamesModal" role="dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="modal-close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Baby Names</h4>
+                </div>
+                <div class="modal-body">
+                  <div id="slider" class="slider">
+                    <div class="slider-box" data-slider="babynamesSlider">
+                      <img src="images/babynames1.png">
+                    </div>
+                    <button class="prev prevBtn fa fa-chevron-left" data-slider="babynamesSlider"></button>
+                    <button class="next nextBtn fa fa-chevron-right" data-slider="babynamesSlider"></button>    
+                  </div>
+                    Baby Names is one of my first ever 'big' projects in my computer science career. 
+                    It was designed to read in data from a text file that contains names sorted by ranking, first name, frequency, gender, third-year.
+                    The data I was given is official data from the Province of Alberta recording names from January 1, 1980 to December 31, 2017.
+                    Proof that it's official is that I can find my own name and that I'm the only Edlee born in Alberta!
+                </div>
+                <div class="modal-footer">
+                  <a class="sourceBtn" href="https://github.com/EdleeDucay/BabyNames" target="blank">VIEW SOURCE</a>
+                  <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="salesystemModal" role="dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close modal-close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Sales System</h4>
+                </div>
+                <div class="modal-body">
+                  <div id="slider" class="slider">
+                    <div class="slider-box" data-slider="salesystemSlider">
+                      <img src="images/salesystem1.png">
+                    </div>
+                    <button  class="prev prevBtn fa fa-chevron-left" data-slider="salesystemSlider"></button>
+                    <button  class="next nextBtn fa fa-chevron-right" data-slider="salesystemSlider"></button>
+                  </div>
+                  Sales System is a simple command line UI that interacts with a persistent SQLite database.
+                  The program is based on an auction/sales management system where users are able to login/signup and view sales,review,bigs and products
+                  while performing actions with such.
+                   
+                </div>
+                <div class="modal-footer">
+                  <a class="sourceBtn" href="https://github.com/EdleeDucay/SalesSystem" target="blank">VIEW SOURCE</a>
+                  <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="datasearchModal" role="dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close modal-close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Data Search</h4>
+                </div>
+                <div class="modal-body">
+                  <div id="slider" class="slider">
+                    <div class="slider-box" data-slider="datasearchSlider">
+                      <img src="images/datasearch1.png">
+                    </div>
+                    <button  class="prev prevBtn fa fa-chevron-left" data-slider="datasearchSlider"></button>
+                    <button  class="next nextBtn fa fa-chevron-right" data-slider="datasearchSlider"></button>
+                  </div>
+                  Data Search is a quick and simple command line UI program that works with data in the physical layer by building an information retrival system
+                  using the Berkeley DB library for operating on files and indicies.
+                </div>
+                <div class="modal-footer">
+                  <a class="sourceBtn" href="https://github.com/EdleeDucay/DataSearch" target="blank">VIEW SOURCE</a>         
+                  <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+
+          </section>
+          <section id="skills">
+            <h2>
+              Skills
+            </h2>
+            <table class="skills">
+              <tr>
+                <td>Python</td>
+                <td>C</td>
+                <td>Java</td>
+              </tr>
+              <tr>
+                <td>SQLite</td>
+                <td>HTML</td>
+                <td>CSS/SCSS</dr>
+              </tr>
+              <tr>
+                <td>Adobe Photoshop</td>
+                <td>Adobe Premiere Pro</td>
+                <td>RISC-V Architecture</td>
+              </tr>
+            </table>
+          </section>
+            <h2>
+              Resume
+            </h2>
+             <p class="resume">
+              <a href="Resume_EdleeDucay.pdf" target="_blank">Take A Look</a>
+             </p>
+          <section id="contact">
+            <h2>
+              Contact
+            </h2>
+            <p>
+              Get in touch and send me an email at ducay@ualberta.ca</br>
+              or take a look at my social media down below.
+            </p>
+            <div class='weblinks'>
+              <ul>
+                <li><a href="https://github.com/EdleeDucay" target="_blank"><i class="fa fa-github"></a></i></li>
+                <li><a href="https://www.linkedin.com/in/edleeducay/" target="_blank"><i class="fa fa-linkedin"></a></i></li>
+                <li><a href="mailto: ducay@ualberta.ca"><i class="fa fa-envelope"></a></i></li>
+                <li><a href="https://www.instagram.com/edleeducay/" target="_blank"><i class="fa fa-instagram"></a></i></li>
+                <li><a href="https://www.facebook.com/edlee.ducay/" target="_blank"><i class="fa fa-facebook"></a></i></li>
+              </ul>
+             
+            </div>
+          </section>
+          </div>
+          </div>
+         
+    </body>
+    </div>
+    <footer>
+      &copy; Edlee Ducay 2020
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</html>

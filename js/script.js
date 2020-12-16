@@ -8,6 +8,7 @@ var prevBtns = document.querySelectorAll('.prevBtn');
 var babynames = ["images/babynames1", "images/babynames2", "images/babynames3", "images/babynames4", "images/babynames5"];
 var datasearch = ["images/datasearch1", "images/datasearch2", "images/datasearch3", "images/datasearch4", "images/datasearch5", "images/datasearch6"];
 var salesystem = ["images/salesystem1", "images/salesystem2", "images/salesystem3", "images/salesystem4"];
+var booktracker = ["images/booktracker1", "images/booktracker2", "images/booktracker3", "images/booktracker4", "images/booktracker5", "images/booktracker6", "images/booktracker7"]; 
 
 $(document).ready(function(event){
           
@@ -97,6 +98,9 @@ function findSlider(slider) {
             break;
         case "salesystemSlider":
             images = salesystem;
+            break;
+        case "booktrackerSlider":
+            images = booktracker;
             break;
         default:
             break;

@@ -334,7 +334,6 @@ footer {
     text-align: center;
     margin: auto;
     width: 75%;    
-    padding: 50px;
 }
 
 
@@ -392,7 +391,7 @@ footer {
     transition: 0.3s;
     background-size: 100%;
     background-position: center;
-    margin: 10px;
+    margin: 20px;
 }
 
 .modal-open:hover {
@@ -420,6 +419,9 @@ footer {
     top: 90%;
 }
 
+.booktrackerBtn {
+    background-image: url(../images/booktrackerThumbnail.png);
+}
 .babynamesBtn {
     background-image:url(../images/babynames1.png);
 }
@@ -548,7 +550,7 @@ footer {
 
 .slider img {
     max-width: 100%;
-    max-width: 100%;
+    max-height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;

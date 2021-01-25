@@ -407,13 +407,29 @@ footer {
     right: 0;
     word-wrap: break-word;
     overflow: hidden;
-    background-color: rgb(0, 153, 255);
-    color: #fff;
     opacity: 0;
     content:attr(data-text);
     transition: 0.3s;
 }
 
+.booktrackerBtn:after {
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 153, 255);
+}
+
+.babynamesBtn:after{
+    background-color:brown;
+    color: #fff;
+}
+
+.salesystemBtn:after {
+    background-color: rgb(0, 153, 255);
+    color: #fff;
+}
+.datasearchBtn:after {
+    background-color: rgb(255, 208, 0);
+    color: #fff;
+}
 .modal-open:hover:after {
     opacity: 1;
     top: 90%;
@@ -423,7 +439,9 @@ footer {
     background-image: url(../images/booktrackerThumbnail.png);
 }
 .babynamesBtn {
-    background-image:url(../images/babynames1.png);
+    background-image:url(../images/babynamesThumbnail.png);
+    background-repeat: no-repeat;
+    background-color: rgb(10, 10, 10);
 }
 
 .datasearchBtn {
@@ -580,4 +598,14 @@ footer {
 
 .slider .next {
     right: 0;
+}
+
+.babynamesDEMO {
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+
+.babynamesDEMO:hover {
+    color: rgb(117, 30, 30);
 }

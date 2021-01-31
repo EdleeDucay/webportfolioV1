@@ -42,9 +42,8 @@ html {
 }
 
 .intro {
-    background-image: url("../images/desk-topview-2.jpg");
+    background-image: url("../images/mountain-bg.jpg");
     background-size: cover;
-    background-color: #000;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -53,7 +52,6 @@ html {
 }
 
 .intro_gradient {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
     height: 100vh;
 
 }
@@ -236,6 +234,26 @@ body p {
 
 }
 
+.skills img {
+    width: 100px;
+    height: 100px;
+    -webkit-transition: .2s ease-in-out;
+        -moz-transition: .2s ease-in-out;
+            transition: .2s ease-in-out;
+    -webkit-filter: grayscale(0%);
+}
+
+.skills img:hover {
+    -webkit-filter: grayscale(100%);
+    
+}
+
+.skills-intro {
+    width: 35%;
+}
+
+
+
 .weblinks {
     padding: 50px;
 }
@@ -297,10 +315,27 @@ body p {
     background-color: #3b5998;
 }
 
+.resume-body {
+    margin-top: 25px;
+    padding-top: 25px;
+    background-color: #00ccff;
+    background-image: url("../images/desk-topview-2.jpg");
+    background-size: cover;
+    background-color: #000;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+.resume-title {
+    -webkit-filter: brightness(110%);
+}
+
 .resume a {
     text-decoration: none;
     margin: auto;
-    color: var(--body_color);
+    color: white;
     border-style: solid;
     border-width: 2px;
     padding: 10px;
@@ -309,7 +344,7 @@ body p {
 
 .resume a:hover {
     padding: 15px;
-    background-color: #dddddd;
+    background-color: #ffffff56;
 }
 
 footer {
